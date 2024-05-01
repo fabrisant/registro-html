@@ -1,0 +1,49 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario ULEAM</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Registro</title>
+<style>
+  body {
+    /* Agregar imagen de fondo */
+    background-image: url('uleam.jpg');
+    /* Centrar y fijar la imagen de fondo */
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
+</head>
+<body>
+    <div class="formulario">
+        <h2>Registro de Usuario</h2>
+        <form action="#" method="POST">
+            <!-- Campo para ingresar el nombre -->
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
+            </div>
+            <!-- Campo para ingresar correo eletronico -->
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+            </div>
+            <!-- Campo para ingresar la cedula de identidad" -->
+            <div class="form-group">
+                <label for="cedula">Cédula de Identidad:</label>
+                <input type="text" id="cedula" name="cedula" placeholder="Ingrese su cédula de identidad" required>
+            </div>
+            <!-- campo para ingresar fecha de nacimiento -->
+            <div class="form-group">
+                <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            </div>
+            <!-- Permite al usuario enviar el formulario correctamente -->
+            <button type="submit">Registrarse</button>
+        </form>
+        <div id="mensajeRegistro" style="display:none;">Registrado</div>
+    </div>
+</body>
+</html>
